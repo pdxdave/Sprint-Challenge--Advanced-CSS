@@ -203,6 +203,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro img {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+}
 .home .space-images {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +243,21 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  padding: 8px 0;
+  background: #22283A;
+  color: #F6F7F8;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background: #F6F7F8;
+  border: 1px solid #81848E;
 }
 .home .walk .walk-img {
   width: 46%;
