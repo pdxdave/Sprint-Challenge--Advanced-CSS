@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites detect the device viewport then delivers a webpage with a layout based on predefined sizes.  For instance, 800x600, 1240x800, 1360x768.
+Responsive websites are somewhat similar, but they are based on flexible layouts and images. A viewport is detected then an appropriate viewport size is served up.  Media queries are used to smoothly transition from one website viewport size to another. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first begins markup with a view area reflecting the size of a smart phone (e.g., iPone). It uses a min-width media query convention that increases with size as development moves toward a desktop view area size.  A desktop first approach uses max-width media query convention as development continues to a smart phone size view area.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It turns the base font-size to ten pixels. I think if it as a global font-size for the project. With respect to rem units (or root em's) it makes the calculation of font sizing easier.  For instance, want a 16 pixel size font?  Just type in 1.6rem. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A CSS preprocessor offers a couple of advantages.  First, since the styles can be nested, the CSS will more closely reflects the look of the HTML.  Second, often repeated values such as colors can be set to a variable.  These variables can be changed in one location and effect an entire website rather than having to hunt down every location the color was set.  Preprocessors also have unique syntaxes that allow for greater control of styles and how they are manipulated. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I really like the nesting capability.  It makes writing and reading markup a lot easier. I don't know if a particular concept, at least as of yet, is problematic. I will say in the case of LESS parametric mixins it can be challenging to decide just how many styles are to be effected.  For instance, color, width, padding, margin, etc.  
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

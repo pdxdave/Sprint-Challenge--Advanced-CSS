@@ -1,1 +1,29 @@
 // Mixins Here
+
+// mixin #1
+.custom-radius(@radius: 5px;) {
+    border-radius: @radius;
+ }
+ 
+ // mixin #2
+ .custom-swap(@color, @background){
+     color: @btn-bg-color;
+     background: @porcelain;
+     border: 1px solid @waterloo;
+ }
+ 
+ // parametric mixin
+ .custom-button(@fontSize, @width) {
+   padding: 8px 0;
+   background: @btn-bg-color;
+   color: @porcelain;
+   font-size: @fontSize;
+   .custom-radius;
+   width: @width;
+   text-align: center;
+   cursor: pointer;
+ 
+   &:hover {
+    .custom-swap(@btn-bg-color, @porcelain);
+   }
+ }
