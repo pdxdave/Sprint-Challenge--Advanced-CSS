@@ -244,8 +244,21 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    order: 1;
+    width: 100%;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -268,9 +281,23 @@ footer {
   background: #F6F7F8;
   border: 1px solid #81848E;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 26px 0;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    order: 0;
+    width: 100%;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
 }
 .home .walk .walk-img img {
   width: 100%;
