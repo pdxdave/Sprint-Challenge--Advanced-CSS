@@ -166,6 +166,11 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 377px) {
+  .nav {
+    width: 320px;
+  }
+}
 .nav li {
   list-style-type: none;
 }
